@@ -4,7 +4,7 @@ import { createAdminClient } from '@/lib/supabase/server'
 const SEED_USERS = [
   {
     email: 'admin@skillbridge.local',
-    password: 'Password123!',
+    password: process.env.SEED_TEST_PASSWORD!,
     full_name: 'Alex Admin',
     role: 'admin' as const,
     neighborhood: 'Downtown',
@@ -16,7 +16,7 @@ const SEED_USERS = [
   },
   {
     email: 'alice@skillbridge.local',
-    password: 'Password123!',
+    password: process.env.SEED_TEST_PASSWORD!,
     full_name: 'Alice Chen',
     role: 'user' as const,
     neighborhood: 'Westside',
@@ -29,7 +29,7 @@ const SEED_USERS = [
   },
   {
     email: 'bob@skillbridge.local',
-    password: 'Password123!',
+    password: process.env.SEED_TEST_PASSWORD!,
     full_name: 'Bob Martinez',
     role: 'user' as const,
     neighborhood: 'Eastside',
@@ -42,7 +42,7 @@ const SEED_USERS = [
   },
   {
     email: 'carol@skillbridge.local',
-    password: 'Password123!',
+    password: process.env.SEED_TEST_PASSWORD!,
     full_name: 'Carol Johnson',
     role: 'user' as const,
     neighborhood: 'Northside',
